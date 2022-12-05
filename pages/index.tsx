@@ -1,5 +1,9 @@
 import type { NextPage } from 'next';
+import getConfig from 'next/config';
 import { Container } from '@mui/material';
+
+const { serverRuntimeConfig, publicRuntimeConfig } = getConfig();
+console.log({ serverRuntimeConfig, publicRuntimeConfig });
 
 const Home: NextPage = () => {
   return (
